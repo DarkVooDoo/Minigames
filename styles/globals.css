@@ -1,7 +1,12 @@
+:root{
+  --Dark_BG_Color: black;
+  --Dark_Element_Color: rgb(33, 33, 33);
+  --Light_BG_Color: white;
+  --Light_Element_Color: rgb(220, 220, 220);
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,14 +18,20 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.dark_bg{
+  background-color: var(--Dark_BG_Color);
+  color: var(--Light_BG_Color)
+}
+
+.dark_element{
+  background-color: var(--Dark_Element_Color);
+  color: var(--Light_BG_Color);
+}
+
+.light_element{
+  background-color: var(--Light_Element_Color);
 }
